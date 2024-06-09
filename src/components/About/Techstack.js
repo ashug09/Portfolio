@@ -18,27 +18,25 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
-
+import { FaHtml5 } from "react-icons/fa6";
+import { FaCss3Alt } from "react-icons/fa";
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <FaHtml5 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaCss3Alt />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
@@ -51,9 +49,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
