@@ -9,6 +9,9 @@ import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import madystore from "../../Assets/Projects/madystore.png";
+import tickety from "../../Assets/Projects/tickety.png"
+import taskportal from "../../Assets/Projects/taskportal.png"
+import tipcalc from "../../Assets/Projects/tipcalc.png"
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -21,6 +24,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={taskportal}
+              isBlog={false}
+              title="SEOSpaceTrax - Task Portal"
+              description="Welcome to SEOSpaceTrax! This project is a full-stack web application built using the MERN stack (MongoDB, Express.js, React, Node.js). SEOSpaceTrax is a task portal with Google authentication, Stripe payment integration, and AWS S3 bucket integration. The application offers functionalities like searching, sorting, and uploading pictures."
+              ghLink="https://github.com/ashug09/frontend-task_portal/"
+              demoLink="https://task-portal.vercel.app/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={madystore}
@@ -31,6 +45,29 @@ function Projects() {
               demoLink="https://ecommerce-seven-murex.vercel.app/"
             />
           </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tickety}
+              isBlog={false}
+              title="Tickety - Ticket Generating Web App"
+              description="Welcome to Tickety! This project is a full-stack CRUD application built using the MERN stack (MongoDB, Express.js, React, Node.js) with Next.js for server-side rendering and serverless APIs. With Tickety, users can generate, view, modify, and delete tickets for various listed issues."
+              ghLink="https://github.com/ashug09/Tickety"
+              demoLink="https://tickety-six.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tipcalc}
+              isBlog={false}
+              title="Tip Calculator"
+              description="Welcome to the Tip Calculator! This is a simple web application that calculates the tip based on the bill amount and splits it among the number of people. Built using HTML, CSS, and JavaScript, this project helps you quickly determine how much each person should contribute to the tip."
+              ghLink="https://github.com/ashug09/Tip-Calculator"
+              demoLink="https://tipcalculator-eight.vercel.app/"
+            />
+          </Col>
+
 {/* 
           <Col md={4} className="project-card">
             <ProjectCard
